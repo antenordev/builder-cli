@@ -80,6 +80,7 @@ exec(`cat <<EOF > $project/save.sh
 #!/bin/bash
 git status
 git add .
+git commit -m "Save"
 git push`);
 
 exec(`cat <<EOF > $project/php.dockerfile
